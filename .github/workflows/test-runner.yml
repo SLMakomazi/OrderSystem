@@ -1,0 +1,13 @@
+name: Test Runner
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-runner:
+    runs-on: self-hosted
+    steps:
+      - name: Print greeting
+        run: echo "Hello from SMAKOMAZI self-hosted runner!"
